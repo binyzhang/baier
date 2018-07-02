@@ -1,0 +1,94 @@
+.add {
+  width: 100%;
+}
+.add .add_return {
+  width: 94px;
+  height: 80px;
+  position: relative;
+}
+.add .add_return .add_return_icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 42px;
+}
+.section {
+  width: 666px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.section .section_title {
+  color: #454F63;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+.section .section_items_item_man {
+  margin-top: 30px;
+  width: 100%;
+  height: 132px;
+  position: relative;
+}
+.section .section_items_item_man .section_items_item_man_l {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 92px;
+  height: 92px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+}
+.section .section_items_item_man .section_items_item_man_r {
+  width: 540px;
+  height: 132px;
+  position: absolute;
+  left: 112px;
+  border-bottom: 1px solid #F4F4F4;
+}
+.section .section_items_item_man .section_items_item_man_r .section_items_item_man_r_name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 480px;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  left: 0;
+  top: 30px;
+}
+.section .section_items_item_man .section_items_item_man_r .section_items_item_man_r_location {
+  height: 20px;
+  position: absolute;
+  top: 75px;
+  left: 0;
+}
+.section .section_items_item_man .section_items_item_man_r .section_items_item_man_r_location .section_items_item_man_r_location_icon {
+  width: 20px;
+  height: 20px;
+}
+.section .section_items_item_man .section_items_item_man_r .section_items_item_man_r_location .section_items_item_man_r_location_font {
+  font-size: 24px;
+  color: #78849E;
+  opacity: .6;
+}
+.section .section_items_item_man .section_items_item_man_r .section_items_item_man_r_arrow {
+  width: 10px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
