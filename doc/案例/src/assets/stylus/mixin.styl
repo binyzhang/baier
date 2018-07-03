@@ -1,0 +1,62 @@
+// font-size 适配
+ft-size($size){
+  font-size: $size; /*px*/
+}
+
+// 背景图片兼容
+bg-img($url)
+  background-image: url($url + ".png");
+  @media (-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2)
+    background-image: url($url + "@2x.png");
+  @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
+    background-image: url($url + "@3x.png");
+
+// 按钮渐变背景色
+linear-bkColor-l(){
+  background: -webkit-linear-gradient(left, #00F2FE, #4FACFE); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #00F2FE, #4FACFE); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #00F2FE, #4FACFE); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #00F2FE, #4FACFE);
+}
+linear-bkColor-d(){
+  background: -webkit-linear-gradient(left, #56CCF2, #2F80ED); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #56CCF2, #2F80ED); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #56CCF2, #2F80ED); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #56CCF2, #2F80ED);
+}
+linear-bkColor-c(){
+  background: -webkit-linear-gradient(left, #FC9C5F, #FC573A); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #FC9C5F, #FC573A); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #FC9C5F, #FC573A); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #FC9C5F, #FC573A);
+}
+// 导航border-bottom渐变色
+linear-border-color() {
+  background: -webkit-linear-gradient(left, #56CCF2, #2F80ED); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #56CCF2, #2F80ED); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #56CCF2, #2F80ED); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #56CCF2, #2F80ED);
+}
+
+border-bottom-1px($color){
+  position: relative
+  &:after{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid $color;  /*no*/
+    content: '';
+    @media (-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2){
+      transform: scaleY(0.5);
+    }
+    @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3){
+      transform: scaleY(0.7);
+    }
+  }
+}
+
+border-none()
+  &:after
+    display: none
